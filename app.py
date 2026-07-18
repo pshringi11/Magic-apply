@@ -719,7 +719,7 @@ with tab2:
       }} else {{
         proceedWithFilling();
       }}
-    })();"""
+    }})();"""
 
     # Escape the JS to create a working URL
     bookmarklet_url = "javascript:" + urllib.parse.quote(bookmarklet_js[11:])
