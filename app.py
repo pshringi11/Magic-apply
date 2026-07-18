@@ -773,8 +773,10 @@ with tab2:
         4. If a CAPTCHA or verification checkpoint is triggered, it will notify you, emit an audio alert, and pause until solved.
         """)
         
-    st.markdown("#### 📋 Copy Bookmarklet Source Code (Manual Bookmark Method)")
-    st.write(
-        "If dragging is disabled, create a bookmark, edit its URL, and paste this entire code block as the location:"
-    )
-    st.code(bookmarklet_js, language="javascript")
+    with st.expander("🛠️ Manual Bookmarklet Setup (If Drag & Drop is Disabled in your Browser)"):
+        st.markdown("#### 📋 Copy Bookmarklet Source Code")
+        st.write(
+            "If your browser prevents dragging the button directly (e.g. inside iframes or on certain secure pages), "
+            "you can configure it manually: create any bookmark in your browser, edit it, and paste this entire code block as the URL/Location:"
+        )
+        st.code(bookmarklet_js, language="javascript")
